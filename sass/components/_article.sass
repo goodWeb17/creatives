@@ -1,0 +1,25 @@
+@mixin Gotham
+    font-family: 'Gotham Pro', sans-serif
+
+.article
+    width: 25%
+    height: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__img
+    &__title
+        color: #11749e
+        @include Gotham
+        font-size: 18px
+        font-weight: 500
+        line-height: 36px
+        text-transform: uppercase
+    &__text
+        color: #222222
+        @include Gotham
+        font-size: 15px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
+        padding: 0 1%

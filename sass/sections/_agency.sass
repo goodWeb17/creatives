@@ -1,0 +1,51 @@
+@mixin Gotham
+    font-family: 'Gotham Pro', sans-serif
+@mixin RobotoCondensed
+    font-family: 'Roboto Condensed', sans-serif
+.agency
+    width: 100%
+    height: auto
+    background-color: #11749e
+    padding-top: 100px
+    padding-bottom: 120px
+    &__content
+        width: 100%
+        display: flex
+        flex-direction: column
+        height: auto
+    &__title
+        color: #ffffff
+    &__carts
+        display: flex
+        width: 100%
+        height: auto
+        margin-top: 100px
+        .cart
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__img
+                width: 100px
+                height: 100px
+                background-color: #2e85aa
+                border-radius: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                color: #ffffff
+                font-size: 25px
+                margin-bottom: 24px
+            &__title
+                @include Gotham
+                color: #ffffff
+                font-size: 18px
+                font-weight: 500
+                text-transform: uppercase
+                margin-bottom: 33px
+            &__text
+                @include Gotham
+                font-weight: 300
+                color: #ffffff
+                text-align: center
+                line-height: 24px
+                font-size: 15px

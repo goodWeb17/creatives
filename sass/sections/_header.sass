@@ -1,0 +1,61 @@
+@import '../components/_navbar'
+@mixin Gotham
+    font-family: 'Gotham Pro', sans-serif
+@mixin openSans
+    font-family: 'Open Sans', sans-serif
+
+.header
+    width: 100%
+    height: 100vh
+    background: url('../../image/header-fon.png') no-repeat center / cover
+    display: flex
+    flex-direction: column
+    &__mane
+        flex-grow: 1
+    &__content
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-bottom: 119px
+    &__title
+        color: #f5f5f5
+        @include Gotham
+        font-size: 153px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: -1.92px
+    &__subtitle
+        display: flex
+        color: #11749e
+        @include Gotham
+        font-size: 25px
+        font-weight: 500
+        text-transform: uppercase
+        letter-spacing: 19px
+        line-height: 51.19px
+
+    .scroll
+        display: flex
+        flex-direction: column
+        position: absolute
+        bottom: 10%
+        &__text
+            @include openSans
+            color: #ffffff
+            font-size: 13px
+            font-weight: 400
+            margin-bottom: 22px
+        &__btn
+            width: 65px
+            height: 65px
+            border: 1px solid #ffffff
+            border-radius: 100%
+            background-color: transparent
+            color: #ffffff
+            transition: 0.5s all
+            &:hover
+                cursor: pointer
+                transform: scale(1.2)
