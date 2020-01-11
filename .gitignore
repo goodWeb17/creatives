@@ -35,7 +35,5 @@ Temporary Items
 *.css.map
 *.sass.map
 *.scss.map
-*.sass
-*.scss
 
 # End of https://www.gitignore.io/api/osx,sass
