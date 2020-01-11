@@ -1,0 +1,48 @@
+@mixin Gotham
+    font-family: 'Gotham Pro', sans-serif
+
+.form
+    display: flex
+    flex-direction: column
+    &__group
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-bottom: 39px
+    &-input
+        width: 100%
+        max-width: 31%
+        height: 48px;
+        border: solid 1px rgb(255, 255, 255)
+        background-color: transparent
+        padding-left: 22px
+        &::placeholder
+            @include Gotham
+            font-size: 15px
+            line-height: 2.4
+            color: rgb(255, 255, 255)
+    &-textarea
+        width: 100%
+        min-height: 151px
+        background-color: transparent
+        border: solid 1px rgb(255, 255, 255)
+        padding-top: 18px
+        padding-left: 22px
+        &::placeholder
+            @include Gotham
+            font-size: 15px
+            line-height: 2.4
+            color: rgb(255, 255, 255)
+    &__message
+        margin-bottom: 46px
+    &-button
+        width: 100%
+        max-width: 227px
+        height: 64px
+        background-color: rgb(17, 116, 158)
+        border-width: 0
+        @include Gotham
+        font-size: 24px
+        font-weight: 500
+        color: rgb(255, 255, 255)
+        margin: 0 auto
