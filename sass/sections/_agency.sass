@@ -50,6 +50,59 @@
                 line-height: 24px
                 font-size: 15px
 
+@media screen and ( max-width: 768px )
+    .agency
+        width: 100%
+        height: auto
+        background-color: #11749e
+        padding-top: 100px
+        padding-bottom: 100px
+        &__content
+            width: 100%
+            display: flex
+            flex-direction: column
+            height: auto
+        &__title
+            color: #ffffff
+        &__carts
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            width: 100%
+            height: auto
+            margin-top: 70px
+            .cart
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 48%
+                margin-bottom: 30px
+                &__img
+                    width: 100px
+                    height: 100px
+                    background-color: #2e85aa
+                    border-radius: 100%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: #ffffff
+                    font-size: 25px
+                    margin-bottom: 24px
+                &__title
+                    @include Gotham
+                    color: #ffffff
+                    font-size: 18px
+                    font-weight: 500
+                    text-transform: uppercase
+                    margin-bottom: 33px
+                &__text
+                    @include Gotham
+                    font-weight: 300
+                    color: #ffffff
+                    text-align: center
+                    line-height: 24px
+                    font-size: 15px
+
 @media screen and ( max-width: 580px )
     .agency
         width: 100%

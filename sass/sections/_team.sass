@@ -39,7 +39,7 @@
             margin-bottom: 0
             flex-wrap: wrap
 
-@media screen and ( max-width: 580px )
+@media screen and ( max-width: 768px )
     .team 
         height: auto
         width: 100%
@@ -55,6 +55,16 @@
             margin-bottom: 20px
         &__subtitle
             margin-bottom: 30px
+        &__members
+            display: flex
+            justify-content: flex-start
+            margin-bottom: 0
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+
+@media screen and ( max-width: 580px )
+    .team
         &__members
             display: flex
             justify-content: flex-start

@@ -2,7 +2,7 @@
     font-family: 'Gotham Pro', sans-serif
 
 .article
-    width: 25%
+    width: 24%
     height: auto
     display: flex
     flex-direction: column
@@ -27,6 +27,32 @@
         line-height: 24px
         text-align: center
         padding: 0 1%
+
+@media screen and ( max-width: 768px )
+    .article
+        width: 48%
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 30px
+        &__title
+            font-size: 16px
+            font-weight: 500
+            line-height: 26px
+            text-transform: uppercase
+            text-align: center
+            margin-top: 25px
+        &__img
+            max-width: 90%
+        &__text
+            color: #222222
+            @include Gotham
+            font-size: 14px
+            font-weight: 300
+            line-height: 22px
+            text-align: center
+            padding: 0
     
 @media screen and ( max-width: 580px )
     .article
