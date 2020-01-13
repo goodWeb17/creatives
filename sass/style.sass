@@ -216,6 +216,113 @@ ol
     line-height: 37px
     text-align: center
 
+.btnMenu
+    display: flex
+    flex-direction: column
+    width: 40px
+    height: 25px
+    justify-content: space-between
+    &:hover
+      cursor: pointer
+    span
+      width: 40px
+      height: 3px
+      background-color: #fff
+
+@media screen and ( max-width: 768px )
+  .btnMenu
+    display: flex
+    flex-direction: column
+    width: 50px
+    height: 30px
+    justify-content: space-between
+    &:hover
+      cursor: pointer
+    span
+      width: 50px
+      height: 3px
+      background-color: #fff
+  .title
+    font-size: 28px
+    line-height: 28px
+  .subtitle
+    font-size: 24px
+    line-height: 25px
+  .logo
+    position: relative
+    width: 58px
+    height: 62px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    .kub1, .kub2
+        position: absolute
+        width: 50px
+        height: 50px
+        top: 0
+        left: 0
+        display: block
+    .kub1
+        background-color: #11749e
+        z-index: 1
+        display: flex
+        justify-content: center
+        align-items: center
+    .kub2
+        background-color: rgba(#ffffff, 0.75)
+        top: 8px
+        left: 12px
+    &__text
+        position: relative
+        z-index: 2
+        color: #f5f5f5
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase
+        @include openSans
+
+@media screen and ( max-width: 580px )
+  .title
+    font-size: 24px
+    line-height: 28px
+  .subtitle
+    font-size: 20px
+    line-height: 25px
+  .logo
+    position: relative
+    width: 53px
+    height: 57px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    .kub1, .kub2
+        position: absolute
+        width: 45px
+        height: 45px
+        top: 0
+        left: 0
+        display: block
+    .kub1
+        background-color: #11749e
+        z-index: 1
+        display: flex
+        justify-content: center
+        align-items: center
+    .kub2
+        background-color: rgba(#ffffff, 0.75)
+        top: 8px
+        left: 12px
+    &__text
+        position: relative
+        z-index: 2
+        color: #f5f5f5
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+        @include openSans
+
 @import './components/_grid'
 
 @import './sections/_header'

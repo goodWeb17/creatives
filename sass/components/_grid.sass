@@ -1,5 +1,16 @@
 .container
     width: 100%
-    max-width: 1170px
+    max-width: 70%
     margin: 0 auto
     height: 100%
+
+@media screen and ( max-width: 1500px )
+    .container
+        max-width: 85%
+        min-width: 1170px
+
+@media screen and ( max-width: 768px )
+    .container
+        max-width: 100%
+        min-width: 0
+        padding: 0 30px

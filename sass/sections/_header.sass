@@ -59,3 +59,82 @@
             &:hover
                 cursor: pointer
                 transform: scale(1.2)
+
+@media screen and ( max-width: 768px )
+    .header
+        &__title
+            font-size: 95px
+        &__subtitle
+            font-size: 20px
+            letter-spacing: 5px
+            line-height: 30px
+            text-align: center
+        .scroll
+            display: flex
+            flex-direction: column
+            position: absolute
+            bottom: 10%
+            align-items: center
+            &__text
+                @include openSans
+                color: #ffffff
+                font-size: 16px
+                font-weight: 400
+                margin-bottom: 18px
+            &__btn
+                width: 55px
+                height: 55px
+                border: 1px solid #ffffff
+                border-radius: 100%
+                background-color: transparent
+                color: #ffffff
+                transition: 0.5s all
+                font-size: 16px
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.15)
+
+@media screen and ( max-width: 580px )
+    .header
+        &__title
+            font-size: 70px
+        &__subtitle
+            font-size: 16px
+            letter-spacing: 2px
+            line-height: 30px
+            text-align: center
+        .scroll
+            display: flex
+            flex-direction: column
+            position: absolute
+            bottom: 10%
+            align-items: center
+            &__text
+                @include openSans
+                color: #ffffff
+                font-size: 13px
+                font-weight: 400
+                margin-bottom: 18px
+            &__btn
+                width: 45px
+                height: 45px
+                border: 1px solid #ffffff
+                border-radius: 100%
+                background-color: transparent
+                color: #ffffff
+                transition: 0.5s all
+                font-size: 13px
+                &:hover
+                    cursor: pointer
+                    transform: scale(1.05)
+
+
+@media screen and ( max-width: 420px )
+    .header
+        &__title
+            font-size: 50px
+        &__subtitle
+            font-size: 12px
+            letter-spacing: 2px
+            line-height: 30px
+            text-align: center

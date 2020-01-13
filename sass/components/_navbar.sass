@@ -5,7 +5,7 @@
     width: 100%
     height: auto
     border-bottom: 1px solid rgba(#808080, 0.38)
-    padding: 25px 0
+    padding: 20px 0
     &__content
         display: flex
         width: 100%
@@ -18,8 +18,13 @@
 
         li
             margin-right: 40px
+            transition: 0.5s all
             &:last-child
                 margin-right: 0
+            &:hover
+                transform: scale(1.2)
+                .menu__link
+                    color: rgb(17, 116, 158)
         &__link
             color: #ffffff
             text-decoration: none
@@ -27,6 +32,8 @@
             font-weight: 400
             @include Myriad
             line-height: 20px
+            transition: 0.5s all
+
     .soc
         display: flex
         margin-left: auto
@@ -39,3 +46,17 @@
             font-weight: 400
             color: #f5f5f5
             text-transform: uppercase  
+
+    &__btnMenu
+        display: none
+
+@media screen and ( max-width: 768px )
+    .navbar
+        &__content
+            justify-content: space-between
+        .menu
+            display: none
+        .soc
+            display: none
+        &__btnMenu
+            display: flex

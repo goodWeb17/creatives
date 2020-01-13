@@ -58,3 +58,77 @@
                 max-width: 90%
             &:nth-child(2)
                 max-width: 95%
+
+@media screen and ( max-width: 580px )
+    .keyFeature
+        background: url('../../image/keyFeature-fon.png') no-repeat center / cover
+        height: auto
+        padding-top: 60px
+        padding-bottom: 50px
+        &__content
+            display: flex
+            justify-content: space-between
+            height: 100%
+            .col__text,
+            .col__img
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+            .col__img
+                align-items: center
+                display: none
+                img
+                    width: auto
+        &__title
+            color: #ffffff
+            @include Gotham
+            font-size: 25px
+            font-weight: 500
+            line-height: 36px
+            text-transform: uppercase
+        &__text
+            color: #ffffff
+            @include Gotham
+            font-size: 15px
+            font-weight: 300
+            line-height: 24px
+            margin-top: 20px
+        &__feature
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            margin-top: 40px
+            .feature
+                width: 100%
+                background-color: #11749e
+                height: 38px
+                display: flex
+                padding-left: 19px
+                margin-bottom: 30px
+                display: flex
+                align-items: center
+                color: #ffffff
+                @include Gotham
+                font-size: 15px
+                font-weight: 500
+                line-height: 20px
+                text-transform: uppercase
+                &:first-child
+                    max-width: 90%
+                &:nth-child(2)
+                    max-width: 95%
+
+@media screen and ( max-width: 380px )
+    .keyFeature
+        &__feature
+            .feature
+                padding: 10px 0
+                padding-left: 10px
+                height: auto
+                &:first-child
+                    max-width: 100%
+                &:nth-child(2)
+                    max-width: 100%

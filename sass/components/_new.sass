@@ -14,7 +14,7 @@
             height: auto
             &:first-child
                 background-color: transparent
-                padding: 82px 13% 2% 5%
+                padding: 82px 15% 2% 8%
             &:last-child
                 padding: 0
                 overflow: hidden
@@ -29,7 +29,7 @@
         width: 50%
         height: auto
         &:first-child
-            padding: 82px 5% 2% 10%
+            padding: 82px 8% 2% 15%
         &:last-child
             padding: 0
             overflow: hidden
@@ -56,3 +56,65 @@
         line-height: 24px
     &__img
         width: 100%
+
+@media screen and ( max-width: 1500px )
+    .new
+        &:nth-child(even)
+            .col
+                &:first-child
+                    background-color: transparent
+                    padding: 82px 10% 2% 8%
+                &:last-child
+                    padding: 0
+                    overflow: hidden
+                .new__date
+                    color: #222222
+                .new__title
+                    color: #222222
+                .new__text
+                    color: #222222
+                .new__img
+        .col
+            width: 50%
+            height: auto
+            &:first-child
+                padding: 82px 8% 2% 10%
+            &:last-child
+                padding: 0
+                overflow: hidden
+        &__img
+            width: auto
+            height: 100%
+
+@media screen and ( max-width: 580px )
+    .new
+        flex-direction: column-reverse
+        height: auto
+        &:nth-child(even)
+            flex-direction: column-reverse
+            .col
+                width: 100%
+                &:first-child
+                    background-color: transparent
+                    padding: 30px 8% 8% 8%
+                &:last-child
+                    padding: 0
+                    overflow: hidden
+                .new__date
+                    color: #222222
+                .new__title
+                    color: #222222
+                .new__text
+                    color: #222222
+                .new__img
+        .col
+            width: 100%
+            height: auto
+            &:first-child
+                padding: 30px 8% 8% 10%
+            &:last-child
+                padding: 0
+                overflow: hidden
+        &__img
+            width: 100%
+            height: auto
